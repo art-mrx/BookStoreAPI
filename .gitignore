@@ -1,0 +1,32 @@
+## Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio / Rider
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.idea/
+
+## NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+## EF / local secrets
+appsettings.*.local.json
+*.db
+*.db-shm
+*.db-wal
+
+## OS
+Thumbs.db
+Desktop.ini

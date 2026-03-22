@@ -1,0 +1,63 @@
+@host = https://localhost:7166
+
+### Books — list (optional search)
+GET {{host}}/api/books?search=
+Accept: application/json
+
+### Books — get by id
+@bookId = 00000000-0000-0000-0000-000000000000
+GET {{host}}/api/books/{{bookId}}
+Accept: application/json
+
+### Books — create
+POST {{host}}/api/books
+Content-Type: application/json
+
+{
+  "title": "Clean Architecture",
+  "description": "A guide to structuring .NET solutions.",
+  "price": 42.50
+}
+
+### Books — update
+PUT {{host}}/api/books/{{bookId}}
+Content-Type: application/json
+
+{
+  "title": "Clean Architecture (2nd ed.)",
+  "description": "Updated.",
+  "price": 45.00
+}
+
+### Books — delete
+DELETE {{host}}/api/books/{{bookId}}
+
+### Users — list
+GET {{host}}/api/users?search=
+Accept: application/json
+
+### Users — get by id
+@userId = 00000000-0000-0000-0000-000000000000
+GET {{host}}/api/users/{{userId}}
+Accept: application/json
+
+### Users — create
+POST {{host}}/api/users
+Content-Type: application/json
+
+{
+  "email": "reader@example.com",
+  "fullName": "Alex Reader"
+}
+
+### Users — update
+PUT {{host}}/api/users/{{userId}}
+Content-Type: application/json
+
+{
+  "email": "alex@example.com",
+  "fullName": "Alex Reader"
+}
+
+### Users — delete
+DELETE {{host}}/api/users/{{userId}}
