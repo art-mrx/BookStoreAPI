@@ -115,5 +115,3 @@ dotnet run --project BookStore.API
 2. **HTTP-файл** — [`BookStore.API/BookStore.API.http`](BookStore.API/BookStore.API/BookStore.API.http) (подставьте реальные GUID).
 3. **curl** / **Invoke-RestMethod** — примеры в разделе выше в истории проекта или через Swagger «Copy as cURL».
 
-## Как залить на GitHub (чтобы README был на главной)
-
